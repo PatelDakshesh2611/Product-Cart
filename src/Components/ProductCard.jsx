@@ -2,7 +2,7 @@ import { Button, ButtonGroup, Card, CardBody, CardFooter, Divider, Flex, Heading
 import { FaRupeeSign } from 'react-icons/fa';
 import React, { useContext, useState } from 'react';
 import CartContext from '../Context/Cartcontext';
-const ProductCard = ({ data }) => {
+const ProductCard =React.memo (({ data }) => {
 
   const {dispatch}=useContext(CartContext);
  
@@ -67,6 +67,6 @@ const ProductCard = ({ data }) => {
       </Card>
     </div>
   );
-};
+});
 
 export default ProductCard;

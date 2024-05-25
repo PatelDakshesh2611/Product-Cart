@@ -3,14 +3,14 @@ import { Box, Button, Flex, Text } from '@chakra-ui/react';
 import CartContext from '../Context/Cartcontext';
 import CartComponent from './CartComponent'; // Assuming you have a CartComponent to render individual cart items
 
-const Popup = () => {
+const Popup = React.memo(() => {
     const { cart, setToggle } = useContext(CartContext);
 
     const onClose = () => {
         setToggle(0);
     }
 
-    // Calculate total amount
+
  
 
     return (
@@ -46,6 +46,6 @@ const Popup = () => {
             </Box>
         </Flex>
     );
-};
+});
 
 export default Popup;

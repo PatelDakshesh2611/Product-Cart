@@ -6,10 +6,7 @@ const Navbar = () => {
   const {cart,setToggle}=useContext(CartContext);
   return (
     <Flex align='center' justify='space-between' p='4' bg='blue.500' >
-      <Text color={'white'} fontSize='xl'>Tej Mart</Text>
-      <Flex>
-        <input className=' w-[10vw] h-[3vh] border rounded-full pl-2' placeholder='Search' type="text" name="" id="" />
-      </Flex>
+      <Text color={'white'} fontSize='xl'>Tej Mart</Text>    
       <Flex color={'white'} position={'relative'}>
       <IconButton
           aria-label='Cart'
